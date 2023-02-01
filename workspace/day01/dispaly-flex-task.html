@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 실습</title>
+    <style>
+
+        #float-container{
+            width: 900px;
+            margin: auto;
+        }
+        
+        #float-container div{
+            float: left;
+            width: 32%;
+            margin-left: 12px;
+        }
+
+        #float-container div:nth-child(1){
+            margin-left: 0;
+        }
+
+        #flex-container{
+            width: 900px;
+            margin: auto;
+            justify-content: space-around;
+            display: flex;
+        }
+        #flex-container div{
+            width: 32%;
+        }
+
+        div img{
+            width: 100%;
+        }
+
+   </style>
+</head>
+<body>
+        <div id="flex-container">
+            <div>
+                <img src="img1.jpg">
+            </div>
+            <div>
+                <img src="img2.jpg">
+            </div>
+            <div>
+                <img src="img3.jpg">
+            </div>
+        </div>
+        <div id="float-container">
+            <div>
+                <img src="img1.jpg">
+            </div>
+            <div>
+                <img src="img2.jpg">
+            </div>
+            <div>
+                <img src="img3.jpg">
+            </div>
+        </div>
+
+
+
+
+</body> 
+</html>
