@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#wrap{
+    width: 640px;
+    margin: 0px auto;
+}
+
+.membership{
+    margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #333;
+}
+
+.required-input{
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(51, 51, 51);
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    line-height: 17px;
+    text-align: right;
+}
+.form {
+    padding: 0px;
+}
+
+.join{
+
+}
+.guide {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.guide-body {
+    width: 139px;
+    padding-top: 12px;
+}
+
+.guide-body-label {
+        font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+}
+
+.guide-body-span {   /* 가상요소 */
+    color: rgb(238, 106, 123);
+}
+
+.information-body {
+    flex: 1 1 0%;
+}
+
+.information-body-input {
+    padding-bottom: 0px
+}
+
+.information-body-input-1 {
+    position: relative;
+    height: 48px;
+}
+
+.overlap {
+    width: 120px;
+    margin-left: 8px;
+}
+
+.overlapcheck {
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 52px;
+    border-radius: 3px;
+    color: rgb(95, 0, 128);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(95, 0, 128);
+}

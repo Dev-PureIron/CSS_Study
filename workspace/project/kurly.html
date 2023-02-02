@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 - 컬리</title>
+    <link rel="stylesheet" href="clone-kurly.css">
+</head>
+<body>
+    <!-- 전체를 감싸주는 영역 -->
+    <div id="wrap">
+        <!-- 제일 상단 회원가입 -->
+        <div class="membership">회원가입</div>
+        <!-- 필수입력사항  -->
+        <div class="required-input">
+            <span class="line1">*</span>필수입력사항
+        </div>
+        <!-- form 영역 -->
+        <div class="form">
+            <!-- 인적사항 정보 기입 -->
+            <div class="join">
+                <!-- 아이디 -->
+                <div class="guide">
+                    <div class="guide-body">
+                        <label for="" class="guide-body-label">아이디
+                            <span class="guide-body-span">*</span>
+                        </label>
+                    </div>
+                    <div class="information-body">
+                        <div class="information-body-input">
+                            <div class="information-body-input-1">
+                                <input id="member-id" name="memberId" placeholder="아이디를 입력해주세요" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap">
+                        <button class="oevrlapcheck" type="button">중복확인</button>
+                    </div>
+                </div>
+
+                <!-- 비밀번호 -->
+                <div class="guide">
+                    <div class="guide-body">
+                        <label for="" class="guide-body-1">비밀번호
+                            <span>*</span>
+                        </label>
+                    </div>
+                    <div class="information-body">
+                        <div class="information-body-input">
+                            <div class="information-body-input-1">
+                                <input id="member-password" name="memberPassword" placeholder="비밀번호를 입력해주세요" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap">
+                    </div>
+                </div>
+                <!-- 비밀번호 확인 -->
+                <div class="guide">
+                    <div class="guide-body">
+                        <label for="" class="guide-body-1">비밀번호확인
+                            <span>*</span>
+                        </label>
+                    </div>
+                    <div class="information-body">
+                        <div class="information-body-input">
+                            <div class="information-body-input-1">
+                                <input id="member-password" name="memberPassword" placeholder="비밀번호를 한번 더 입력해주세요" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap">
+                    </div>
+                </div>
+                <!-- 이름 -->
+                <div class="guide">
+                    <div class="guide-body">
+                        <label for="" class="guide-body-1">이름
+                            <span>*</span>
+                        </label>
+                    </div>
+                    <div class="information-body">
+                        <div class="information-body-input">
+                            <div class="information-body-input-1">
+                                <input id="member-name" name="memberName" placeholder="이름을 입력해주세요" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap">
+                    </div>
+                </div>
+                <!-- 이메일 -->
+                <div class="guide">
+                    <div class="guide-body">
+                        <label for="" class="guide-body-1">이메일
+                            <span>*</span>
+                        </label>
+                    </div>
+                    <div class="information-body">
+                        <div class="information-body-input">
+                            <div class="information-body-input-1">
+                                <input id="member-email" name="memberEmail" placeholder="예: marketkurly@kurly.com" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap">
+                        <button class="oevrlapcheck" type="button">중복확인</button>
+                    </div>
+                </div>
+                <!-- 핸드폰 번호 -->
+                <div class="guide">
+                    <div class="guide-body">
+                        <label for="" class="guide-body-1">휴대폰
+                            <span>*</span>
+                        </label>
+                    </div>
+                    <div class="information-body">
+                        <div class="information-body-input">
+                            <div class="information-body-input-1">
+                                <input id="member-phone" name="memberPhone" placeholder="숫자만 입력해주세요" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap">
+                        <button class="oevrlapcheck" type="button">
+                           <span class="phone-span">인증번호 받기 </span>
+                        </button>
+                    </div>
+                </div>
+                <!-- 주소 -->
+                <div class="guide">
+                    <div class="guide-body">
+                        <label for="" class="guide-body-1">주소
+                            <span>*</span>
+                        </label>
+                    </div>
+                    <div class="information-body">
+                        <div class="information-body-input">
+                            <div class="information-body-input-1">
+                                <button class="address-button" >
+                                    <span class="address-button-span">
+                                        <img src="https://res.kurly.com/pc/service/cart/2007/ico_search.svg"> 주소 검색
+                                    </span>
+                                </button>
+                                <span class="address-span">배송지에 따라 상품정보가 달라질 수 있습니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap">
+                    </div>
+                </div>
+                <!-- 성별 -->
+                <div class="guide">
+                    <div class="guide-body">
+                        <label for="" class="guide-body-1">성별
+                            <span>*</span>
+                        </label>
+                    </div>
+                    <div class="information-body">
+                        <div class="information-body-input">
+                            <div class="information-body-input-1">
+
+                                <div class="gender-body">
+                                       <!-- 남자 --> 
+                                    <label for="gender-man" class="gender-man">
+                                        <input type="radio" class="gender-man-input">
+                                        <span class="gender-label-span">
+                                            <div class="gender-label-span-div">
+                                            </div>
+                                        </span>
+                                        <span class="gender-span">남자</span>
+                                    </label>
+
+                                    <!-- 여자 -->
+                                    <label for="gender-woman" class="gender-woman">
+                                        <input type="radio" class="gender-woman-input">
+                                        <span class="gender-label-span">
+                                            <div class="gender-label-span-div">
+                                            </div>
+                                        </span>
+                                        <span class="gender-span">여자</span>
+                                    </label>
+
+                                    <!-- 선택안함 -->
+                                    <label for="gender-man" class="gender-none">
+                                        <input type="radio-NONE" class="gender-none-input">
+                                        <span class="gender-label-span-none">
+                                            <div class="gender-label-span-div">
+                                            </div>
+                                        </span>
+                                        <span class="gender-span-none">선택안함</span>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap">
+                    </div>
+                </div>
+                <!-- 생년월일 -->
+                <div class="guide">
+                    <div class="guide-body">
+                        <label for="" class="guide-body-1">생년월일
+                            <span>*</span>
+                        </label>
+                    </div>
+                    <div class="information-body">
+                        <div class="information-body-input">
+                            <div class="information-body-input-1">
+                                <div class="birth">
+                                    <div class="birth-div">
+                                        <input type="text" class="birth-div-input">
+                                    </div>
+                                </div>
+                                <span class="birth-span"></span>
+                                <div class="birth">
+                                    <div class="birth-div">
+                                        <input type="text" class="birth-div-input">
+                                    </div>
+                                </div>
+                                <span class="birth-span"></span>
+                                <div class="birth">
+                                    <div class="birth-div">
+                                        <input type="text" class="birth-div-input">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap">
+                    </div>
+                </div>
+                <!-- 추가입력 사항 -->
+                <div class="guide">
+                    <div class="guide-body">
+                        <label for="" class="guide-body-1">추가입력 사항
+                            <span>*</span>
+                        </label>
+                    </div>
+                    <div class="information-body">
+                        <div class="information-body-input">
+                            <div class="information-body-input-1">
+
+                                <div class="plusinput">
+                                    <laber class="plusinput-label">
+                                        <input type="radio" id="plusinput-label-input">
+                                        <span class="plusinput-span">
+                                            <div class="plusinput-span-div">
+                                            </div>
+                                        <span class="plusinput-label-span-id">친구초대 추천인 아이디</span>
+                                        </span>
+                                    </laber>
+
+                                    <laber class="plusinput-label">
+                                        <input type="radio" id="plusinput-label-input">
+                                        <span class="plusinput-span">
+                                            <div class="plusinput-span-div">
+                                            </div>
+                                        <span class="plusinput-label-span-id">참여 이벤트명</span>
+                                        </span>
+                                    </laber>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlap">
+                    </div>
+                </div>
+                <!-- 실선 -->
+                <div></div>
+                <!-- 이용약관 -->
+                <div class="agree">
+                    <div class="agree-guide">
+                            <!-- 프론트 -->
+                        <div class="agree-guide-front">
+                            <label for="" class="agree-guide-fornt-font">이용약관
+                                <span>*</span>
+                            </label>
+                        </div>
+
+                        <!-- 바디 -->
+                        <div class="agree-guide-body">
+                                <!-- 1번 -->
+                            <div class="agree-guide-body-check">
+                                 <label class="agree-guide-body-check-label" for="agree">
+                                     <input type="text"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="">
+                                </label>
+                                <p class="agreefont1">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
+                            </div>
+
+                            <!-- 2번 -->
+                            <div class="agree-guide-body-check">
+                                <div class="agree-guide-body-check-in">
+                                    <label class="agree-guide-body-check-label" for="agree">
+                                        <input type="text">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="">
+                                        <span class="agree-guide-body-check-span">이용약관 동의</span>    
+                                    </label>
+                                    <span class="agree-guide-body-span">(필수)
+                                    </span>
+                                </div>
+                                <a href="" class="agreement1">약관보기
+                                </a>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="agree-guide-body-check">
+                                <div class="agree-guide-body-check-in">
+                                    <label class="agree-guide-body-check-label" for="agree">
+                                         <input type="text">
+                                         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="">
+                                        <span class="agree-guide-body-check-span">개인정보 수집∙이용 동의</span>    
+                                     </label>
+                                     <span class="agree-guide-body-span">(필수)
+                                     </span>
+                                </div>
+                               <a href="" class="agreement1">약관보기
+                               </a>
+                        </div>
+
+                        <!-- 4번 -->
+                        <div class="agree-guide-body-check">
+                            <div class="agree-guide-body-check-in">
+                                <label class="agree-guide-body-check-label" for="agree">
+                                     <input type="text">
+                                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="">
+                                    <span class="agree-guide-body-check-span">개인정보 수집∙이용 동의</span>    
+                                 </label>
+                                 <span class="agree-guide-body-span">(선택)
+                                 </span>
+                            </div> 
+                           <a href="" class="agreement1">약관보기
+                           </a>
+                       </div>
+
+                       <!-- 5번 -->
+                       <div class="agree-guide-body-check">
+                             <div class="agree-guide-body-check-in">
+                            <label class="agree-guide-body-check-label" for="agree">
+                                 <input type="checkbox">
+                                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="">
+                                     <span class="agree-guide-body-check-span">무료배송, 할인쿠폰 등 혜택/정보 수신 동의</span>    
+                                </label>
+                                 <span class="agree-guide-body-span">(선택))
+                                </span>
+                            </div> 
+                            <div class="agree-guide-body-check-checkbox">
+                                <label for="" class="agree-gudie-body-check-checkbox-sms">
+                                    <input type="checkbox" id="agree-guide-body-check-checkbox-id">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
+                                    <span class="checkbox-span">SNS</span>
+                                </label>
+                                <label for="" class="agree-gudie-body-check-checkbox-label">
+                                    <input type="checkbox" id="agree-guide-body-check-checkbox-email">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
+                                    <span class="checkbox-span">이메일</span>
+                                </label>
+                            </div>
+                            <div class="agree-guide-body-check-checkbox">
+                                    <p class="agree-gudie-body-check-checkbox-msg">동의 시 한 달간 [5%적립] + [2만원 이상 무료배송] 첫 주문 후 안내</p>
+                            </div>
+
+                        </div>
+
+                       <!-- 6번 -->
+                       <div class="agree-guide-body-check">
+                         <div class="agree-guide-body-check-in">
+                            <label class="agree-guide-body-check-label" for="agree">
+                                 <input type="text">
+                                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="">
+                                <span class="agree-guide-body-check-span">본인은 만 14세 이상입니다.</span>    
+                             </label>
+                             <span class="agree-guide-body-span">(필수)
+                             </span>
+                        </div> 
+                      </div>
+                    </div>
+                </div>
+
+                <!-- 회원가입하기 버튼 -->
+                <div class="memeberjoin">
+                    <button class="memberjoin-button" type="submit">
+                        <span class="memberjoin-span">가입하기</span>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
