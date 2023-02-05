@@ -10,23 +10,9 @@
 /* Bold 700 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
 
-html {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: "Noto Sans KR", "malgun gothic", AppleGothic, dotum, sans-serif;
-}
 
-html {
-    line-height: 1.15;
-    -webkit-tap-highlight-color: transparent;
-}
-
-body {
-    -webkit-tap-highlight-color: transparent;
-    background-color: #fff;
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+html, button, input, select, textarea {
+    font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
 }
 
 body, button, input, select, textarea {
@@ -34,52 +20,33 @@ body, button, input, select, textarea {
     color: #333;
 }
 
-html, button, input, select, textarea {
-    font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
+body {
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    -webkit-tap-highlight-color: transparent;
 }
 
-html, body {
+body, html {
     height: 100%;
 }
 
 *, :after, :before {
-  box-sizing: border-box;
-  margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 *, :after, :before, legend, td, th {
     padding: 0;
 }
 
-input::placeholder {
-    font-size: 14px;
-    /* font-family: ;
-    font-weight: ; */
-    color: #757575;
-}
-
-input[typr=checkbox] {
-    overflow: hidden;
-}
-
-input[type=checkbox], input[type=radio] {
-    padding: 0;
-    box-sizing: border-box;
-}
-
-button[disabled], input[disabled] {
-    cursor: default;
-}
-
-button, input, optgroup, select, textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0;
-    -webkit-tap-highlight-color: transparent;
-}
-
-label {
-    cursor: default;
+body {
+    display: block;
+    margin: 8px;
 }
 
 /* 헤더 */
@@ -578,608 +545,119 @@ button, input[type=button], input[type=reset], input[type=submit] {
 }
 
 
-
-/* 본문  */
-.joinLayout {
-    background-color: #fff;
-    margin-bottom: 60px;
-    margin-top: 50px;
+/* 메인 */
+.wrap {
     min-width: 1050px;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    background-color: #fff;
 }
 
-.membership{
-    color: #333;
-    letter-spacing: -1px;
+.top-login {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
     text-align: center;
-    font-weight: 500;
-    line-height: 35px;
-    font-size: 28px;
-    margin-bottom: 50px;
 }
 
-.form {
+.main-login {
+    width: 340px;
     margin: 0px auto;
-    width: 640px;
+    letter-spacing: -0.6px;
 }
 
-.required-input{
-    padding-bottom: 10px;
-    border-bottom: 2px solid rgb(51, 51, 51);
-    font-size: 12px;
-    color: rgb(102, 102, 102);
-    line-height: 17px;
-    text-align: right;
+.form-top {
+        margin-top: 30px;
 }
 
-.line1 {
-    color: rgb(238, 106, 123)
+.form-top-div:first-of-type {
+    margin-bottom: 5px;
 }
 
-.join {
-    padding: 0px;
+.form-top-div {
+        padding-bottom: 12px;
 }
 
-.guide {
-    padding: 10px 20px;
-    width: 100%;
-    display: inline-flex;
+.form-top-div input {
+    height: 54px;
+    font-size: 14px;
 }
 
-.guide-body {
-    width: 139px;
-    padding-top: 12px;
-}
-
-.guide-body-label {
-    line-height: 20px;
-    color: rgb(51, 51, 51);
-    font-weight: 500;
-}
-
-.guide-body-span {   /* 가상요소 */
-    color: rgb(238, 106, 123);
-}
-
-.information-body {
-    flex: 1 1 0%;
-}
-
-.information-body-input {
-    padding-bottom: 0px
-}
-
-.information-body-input-1 {
+.form-top-div-div {
+    position: relative;
     height: 48px;
-    position: relative;
 }
-#member-id {
-    box-sizing: border-box;
-    outline: none;
-    color: rgb(51, 51, 51);
-    line-height: 1.5;
-    font-size: 16px;
-    font-weight: 400;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 4px;
-    padding: 0px 11px 1px 15px;
+
+.form-top-div-div-input {
+       width: 100%;
     height: 46px;
-    width: 100%;
-}
-
-#member-password {
-    box-sizing: border-box;
-    outline: none;
-    color: rgb(51, 51, 51);
-    line-height: 1.5;
-    font-size: 16px;
-    font-weight: 400;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 4px;
     padding: 0px 11px 1px 15px;
-    height: 46px;
-    width: 100%;
-}
-
-#member-name {
-    box-sizing: border-box;
-    outline: none;
-    color: rgb(51, 51, 51);
-    line-height: 1.5;
-    font-size: 16px;
-    font-weight: 400;
+    border-radius: 4px;
     border: 1px solid rgb(221, 221, 221);
-    border-radius: 4px;
-    padding: 0px 11px 1px 15px;
-    height: 46px;
-    width: 100%;
-}
-
-#member-email {
-    box-sizing: border-box;
-    outline: none;
-    color: rgb(51, 51, 51);
-    line-height: 1.5;
-    font-size: 16px;
     font-weight: 400;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 4px;
-    padding: 0px 11px 1px 15px;
-    height: 46px;
-    width: 100%;
-}
-
-#member-phone {
-    box-sizing: border-box;
-    outline: none;
-    color: rgb(51, 51, 51);
-    line-height: 1.5;
     font-size: 16px;
-    font-weight: 400;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 4px;
-    padding: 0px 11px 1px 15px;
-    height: 46px;
-    width: 100%;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
 }
 
-.overlap {
-    margin-left: 8px;
-    width: 120px;
-}
-
-
-.oevrlap-check {
-    border: 1px solid rgb(95, 0, 128);
-    background-color: rgb(255, 255, 255);
-    color: rgb(95, 0, 128);
-    border-radius: 3px;
-    height: 52px;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    padding: 0px 10px;
-    display: block;
-}
-
-.overlap-check-span {
-    font-weight: 700;
-    font-size: 14px;
-}
-
-.overlap > button {
-    border-radius: 3px;
-    height: 44px;
-}
-
-.overlap-check:disabled {
-    border-color: rgb(221, 221, 221);
-    color: rgb(221, 221, 221);
-}
-
-.overlap-check > button > span {
-    font-weight: 500;
-    font-size: 14px;
-}
-
-.address-button {
-    border: 1px solid rgb(95, 0, 128);
-    color: rgb(95, 0, 128);
-    background-color: rgb(255, 255, 255);
-    border-radius: 4px;
-    height: 44px;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    padding: 0px 10px;
-    display: block;
-}
-
-.address-span {
-    color: rgb(102, 102, 102);
-    line-height: 18px;
-    font-size: 12px;
+.form-middle {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
     margin-top: 10px;
-    display: block;
+    font-size: 13px;
 }
 
-
-.gender-body {
-    flex-direction: row;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    display: flex;
+.form-middle-find {
+        color: rgb(51, 51, 51);
+    cursor: pointer;
 }
 
-.gender-label {
-    position: relative;
-    padding: 12px 0px 9px;
-    align-items: center;
-    -webkit-box-align: center;
-    display: flex;
-}
-
-.gender-label-input {
-    clip: rect(0px, 0px, 0px, 0px);
-    height: 1px;
+.form-middle-span {
     width: 1px;
-    position: absolute;
-    overflow: hidden;
-}
-
-.gender-label-span {
-    background-color: rgb(95, 0, 128);
-    border-radius: 50%;
-    position: relative;
-    display: inline-block;
-    min-height: 24px;
-    min-width: 24px;
-}
-
-
-.gneder-label-span-div {
-    background-color: white;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    position: absolute;
     height: 10px;
-    width: 10px;
+    margin: 3px 6px 0px;
+    background-color: rgb(51, 51, 51);
 }
 
-.gender-name {
-    margin-left: 12px;
-    font-size: 16px;
-    position: relative;
+.form-bottom {
+        margin-top: 28px;
 }
 
-.birth {
-    padding: 0px 15px;
-    border-radius: 3px;
-    border: 1px solid rgb(204, 204, 204);
-    align-items: center;
-    width: 100%;
-    -webkit-box-align: center;
-    display: flex;
-    height: 44px;
-}
-
-.birth input {
-    text-align: center;
-    font-size: 14px;
-    border: none;
-}
-
-.birth-div {
-    padding-bottom: 0px;
-}
-
-.birth-div-div {
-    height: 40px;
-    position: relative;
-}
-
-.birth.div input {
-    border: none;
-    font-size: 14px;
-    text-align: center;
-}
-
-.birth-inputbox {
-    width: 100%;
-    height: 40px;
-    padding: 0px 11px 1px 15px;
-    border-radius: 4px;
-    border: 1px solid rgb(221, 221, 221);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 38px;
-    color: rgb(51, 51, 51);
-    outline: none;
-    box-sizing: border-box;
-}
-
-.birth-span {
-    height: 100%;
-}
-
-.birth-span::after {
-    content: "/";
-    font-size: 14px;
-    color: rgb(204, 204, 204);
-    text-align: center;
-    line-height: 40px;
-}
-
-.plusinput {
-    flex-direction: row;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    display: flex;
-}
-
-.plusinput-label {
-    padding: 12px 0px 9px;
-    align-items: center;
-    -webkit-box-align: center;
-    display: flex;
-    position: relative;
-}
-
-.plusinput-label-input {
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    clip: rect(0px, 0px, 0px, 0px);
-}
-
-.plusinput-span {
-    border: 1px solid rgb(221, 221, 221);
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    min-height: 24px;
-    min-width: 24px;
-}
-
-.plusinput > label > span {
-    font-size: 14px;
-}
-
-.plusinput-label-span-div {
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    height: 10px;
-    width: 10px;
-}
-
-.plusinput-label-span-2 {
-    margin-left: 12px;
-    position: relative;
-}
-
-.plusinput-span-div {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-}
-
-.line2 {
-    border-bottom: 1px solid rgb(51, 51, 51);
-    padding: 10px 0px;
-}
-
-.agree {
-    padding: 0px;
-}
-
-.agree-guide {
-    padding: 10px 0px 10px 20px;
-    width: 100%;
-    display: inline-flex;
-}
-
-
-.agree-guide-front {
-    padding-top: 12px;
-    width: 139px;
-}
-
-.agree-guide-front-text {
-    line-height: 20px;
-    color: rgb(51, 51, 51);
-    font-weight: 500;
-}
-
-.agree-guide-body-check {
-    -webkit-box-align: center;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    padding: 8px 0px;
-    display: flex;
-}
-
-.agree-guide-body-check:first-of-type {
-    padding-top: 12px;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-
-.agree-guide-body-check-label {
-    font-size: 18px;
-    font-weight: 500;
-    padding: 0px;
-    color: rgb(51, 51, 51);
-    line-height: normal;
-    vertical-align: top;
-    align-items: center;
-    -webkit-box-align: center;
-    display: flex;
-    position: relative;
-}
-
-.agree-guide-body-check-label-input {
-    height: 1px;
-    width: 1px;
-    clip-path: inset(50%);
-    clip: rect(0px, 0px, 0px, 0px);
-    position: absolute;
-    overflow: hidden;
-}
-
-.input-img1 {
-    margin-right: 12px;
-    height: 24px;
-    width: 24px;
-    display: inline-block;
-}
-
-.agreefont1 {
-    padding-left: 36px;
-    padding-top: 4px;
-    color: rgb(102, 102, 102);
-    font-size: 12px;
-}
-
-.agree-guide-body-check-in {
-    align-items: center;
-}
-
-.agree-guide-body-check-in-label {
-    font-size: 14px;
-    padding: 0px;
-    color: rgb(51, 51, 51);
-    line-height: normal;
-    vertical-align: top;
-    align-items: center;
-    -webkit-box-align: center;
-    display: flex;
-    position: relative;
-}
-
-.agreement1 {
-    letter-spacing: 0px;
-    color: rgb(95, 0, 128);
-    padding-right: 22px;
-}
-
-.agreement1::after {
-    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjExIiB2aWV3Qm94PSIwIDAgNiAxMSI+CiAgICA8cGF0aCBmaWxsPSIjNUYwMDgwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xIDExTDYgNS41IDEgMCAwIDEuMSA0IDUuNSAwIDkuOXoiLz4KPC9zdmc+Cg==") 50% 50% / 6px 9px no-repeat;
-    height: 9px;
-    width: 6px;
-    margin-left: 4px;
-    display: inline-block;
-    content: "";
-}
-
-
-.agree-guide-body-check-in {
-    align-items: center;
-    display: flex;
-}
-
-.agree-guide-body-check-in-label {
-    font-size: 14px;
-    padding: 0px;
-    color: rgb(51, 51, 51);
-    line-height: normal;
-    vertical-align: top;
-    align-items: center;
-    -webkit-box-align: center;
-    display: flex;
-    position: relative;
-}
-
-.agree-guide-body-check-in-span {
-    color: rgb(153, 153, 153);
-    padding-left: 5px;
-}
-
-.agree-gudie-body-check-in-label-input {
-    height: 1px;
-    width: 1px;
-    clip-path: inset(50%);
-    clip: rect(0px, 0px, 0px, 0px);
-    position: absolute;
-    overflow: hidden;
-}
-
-.agree-gudie-body-check-in-label-img {
-    margin-right: 12px;
-    height: 24px;
-    width: 24px;
-    display: inline-block;
-}
-
-.memberjoin {
-    padding: 40px 0px;
-    border-top: 1px solid rgb(247, 247, 247);
-    justify-content: center;
-    -webkit-box-pack: center;
-    display: flex;
-}
-
-.memberjoin-button {
-    border: 0px none;
-    background-color: rgb(95, 0, 128);
-    color: rgb(255, 255, 255);
-    border-radius: 3px;
-    height: 56px;
-    width: 240px;
-    overflow: hidden;
-    text-align: center;
+.form-bottom-login {
+        display: block;
     padding: 0px 10px;
-    display: block;
-}
-
-.memberjoin-span {
-    font-weight: 500;
-    font-size: 16px;
-    display: inline-block;
-}
-
-.agree-gudie-body-check-5 {
-    display: flex;
-    padding: 8px 0px;
-    flex-direction: column;
-}
-
-.agree-body-guide-check-in-5 {
-    padding-left: 24px;
-    align-items: center;
-    -webkit-box-align: center;
-    display: flex;
-    position: relative;
-}
-
-.agree-body-guide-check-in-5-label {
-    font-size: 14px;
-    color: rgb(51, 51, 51);
-    line-height: normal;
-    align-items: center;
-    vertical-align: top;
-    -webkit-box-align: center;
-    display: flex;
-    position: relative;
-    padding: 14px 80px 9px 0px;
-}
-
-.agree-body-guide-check-in-5-label-input {
-    height: 1px;
-    width: 1px;
-    clip-path: inset(50%);
-    clip: rect(0px, 0px, 0px, 0px);
-    position: absolute;
+    text-align: center;
     overflow: hidden;
+    width: 100%;
+    height: 54px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(95, 0, 128);
+    border: 0px none;
 }
 
-.agree-body-check-in-5-label-img {
-    margin-right: 12px;
-    height: 24px;
-    width: 24px;
+.form-bottom-span {
     display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.agree-body-guide-check-in-p {
-        letter-spacing: -0.5px;
-        line-height: 18px;
-        color: rgb(95, 0, 128);
-        font-size: 12px;
-        background: url("https://res.kurly.com/pc/service/common/2006/ico_sub_dot.svg") 0px 0px / 16px 20px no-repeat;
-        padding-left: 16px;
-        margin-left: 36px;
-}
 
+.form-bottom-membership {
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 54px;
+    border-radius: 3px;
+    color: rgb(95, 0, 128);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(95, 0, 128);
+}
 
 /* 푸터 */
 
@@ -1450,5 +928,3 @@ img, legend {
     padding-top: 7px;
     font-style: normal;
 }
-
-
