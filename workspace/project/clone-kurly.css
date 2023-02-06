@@ -9,11 +9,10 @@
 
 /* Bold 700 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
-
 html {
     box-sizing: border-box;
     margin: 0;
-    font-family: "Noto Sans KR", "malgun gothic", AppleGothic, dotum, sans-serif;
+    font-family: "Noto Sans KR", "malgun gothic", AppleGothic, dotum, sans-serif!important;
 }
 
 html {
@@ -83,6 +82,10 @@ label {
 }
 
 /* 헤더 */
+
+.high {
+      font-family: "Noto Sans KR", "malgun gothic", AppleGothic, dotum, sans-serif!important;
+}
 
 img, legend {
     border: 0;

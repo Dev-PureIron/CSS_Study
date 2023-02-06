@@ -12,7 +12,7 @@
 
 
 html, button, input, select, textarea {
-    font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
+    font-family: "Noto Sans KR", "malgun gothic", AppleGothic, dotum, sans-serif!important;
 }
 
 body, button, input, select, textarea {
@@ -50,6 +50,10 @@ body {
 }
 
 /* 헤더 */
+
+.high {
+    font-family: "Noto Sans KR", "malgun gothic", AppleGothic, dotum, sans-serif!important;
+}
 
 img, legend {
     border: 0;
